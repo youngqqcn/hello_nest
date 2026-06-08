@@ -1,0 +1,8 @@
+{
+  // 推荐安装的 VSCode 插件（打开项目时 VSCode 会弹窗提示）
+  "recommendations": [
+    "dbaeumer.vscode-eslint",       // ESLint 检查（你现在看到的红线就是它出的）
+    "esbenp.prettier-vscode",        // Prettier 格式化
+    "editorconfig.editorconfig"      // 读 .editorconfig 自动适配缩进
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  // ─────────────────────────────────────────────────────────────
+  // VSCode 工作区级别设置 —— 只对 hello_nest 项目生效
+  // 提交进 git，团队成员/未来的你打开项目时配置一致
+  // ─────────────────────────────────────────────────────────────
+
+  // 缩进相关：让 VSCode 按 .editorconfig 走，并配合项目 Prettier
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false, // 关掉自动检测，避免 VSCode 自作聪明
+
+  // 保存时自动用 Prettier 格式化 —— 写代码再也不用关心缩进
+  // TODO(你来决定):
+  //   - 如果想"保存即自动格式化"（推荐），保持 formatOnSave 为 true
+  //   - 如果你更喜欢"手动 Cmd/Ctrl+Shift+P → Format Document"，改成 false
+  //   - 同时把下方 codeActionsOnSave 里的 source.fixAll.eslint 改为 "never"
+  //     可以避免保存时自动改你的代码（有些人不喜欢这种"被改"的感觉）
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // 保存时让 ESLint 自动修复可修复的问题（包括 prettier/prettier 那条）
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+
+  // 明确告诉 VSCode：TypeScript/JavaScript 文件用 Prettier 格式化
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
