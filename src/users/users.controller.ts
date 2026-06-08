@@ -10,8 +10,8 @@ import {
   ValidationPipe,
 } from '@nestjs/common';
 import { UsersService } from './users.service';
-import { CreateUserDto } from './dto/create-user.dto';
 import { UserVo } from './vo/user.vo';
+import { CreateUserDto } from './dto/create-user.dto';
 
 /**
  * UsersController —— 走 class-validator 验证链路
